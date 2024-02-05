@@ -1,7 +1,7 @@
 # Containerized Resensys DbLogger
 
 A containerized solution for Resensys DbLogger with built-in MySQL database for running standalone instances on cloud and other PCs.
-* Compatible with SenScope
+* Compatible with [SenScope]([https://link-url-here.org](https://www.resensys.com/r20/wireless-products-senspot/senscope-monitoring-diagnostics-data-display.html)) desktop client.
 
 
 ### Getting Started
