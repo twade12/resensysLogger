@@ -23,7 +23,7 @@ sudo docker ps -a
 ```
 ```
 CONTAINER ID   IMAGE                     COMMAND                  CREATED          STATUS          PORTS                               NAMES
-832ddd77606d   resensys_logger:v2        "./DbLogger_5555"        10 minutes ago   Up 10 minutes   0.0.0.0:5555->5555/tcp              logger-container
+832ddd77606d   resensys_logger:v2        "./DbLogger"             10 minutes ago   Up 10 minutes   0.0.0.0:5555->5555/tcp              logger-container
 8e80e243310a   mysql:5.7                 "docker-entrypoint.s…"   10 minutes ago   Up 10 minutes   33060/tcp, 0.0.0.0:3307->3306/tcp   mysql-container
 ```
 2. Confirm that exposed ports are listening on host machine outside of containers:
