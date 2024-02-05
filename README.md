@@ -7,11 +7,11 @@ A containerized solution for Resensys DbLogger with built-in MySQL database for 
 ### Getting Started
 Clone the repo and run the following command substituting "4E34" with a particular site ID (format: XXXX):
 ```
-sudo git clone https://github.com/xxxxxx/dockerLogger.git && cd dockerLogger/ && sudo bash linuxSetup.sh 4E34
+sudo git clone https://github.com/twade12/resensysLogger.git && cd dockerLogger/ && sudo bash linuxSetup.sh 4E34
 ```
 Try without sudo if on macOS:
 ```
-git clone https://github.com/xxxxxx/dockerLogger.git && cd dockerLogger/ && bash linuxSetup.sh 4E34
+git clone https://github.com/twade12/resensysLogger.git && cd dockerLogger/ && bash linuxSetup.sh 4E34
 ```
 After a couple of seconds, you should have a running service consisting of two containerized applications: mysql-container and logger-container.
 
