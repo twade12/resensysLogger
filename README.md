@@ -1,9 +1,6 @@
 # Containerized Resensys DbLogger
 
 A containerized solution for Resensys DbLogger with built-in MySQL database for running standalone instances on cloud and other PCs.
-* Infrastructure-independent
-* OS Independent
-* Installs Docker-CE on host
 * Compatible with SenScope
 
 
