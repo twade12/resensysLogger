@@ -4,7 +4,7 @@ services:
   mysql:
     image: mysql:5.7
     command: --bind-address=0.0.0.0 --default-authentication-plugin=mysql_native_password
-    platform: linux/arm64
+    platform: linux/amd64
     container_name: mysql-container
     environment:
       MYSQL_ROOT_PASSWORD: BridgeWatcher6517
