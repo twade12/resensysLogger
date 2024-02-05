@@ -21,7 +21,7 @@ services:
   
   logger:
     image: resensys_logger:v2
-    platform: linux/arm64
+    platform: linux/amd64
     container_name: logger-container
     build:
       context: .
