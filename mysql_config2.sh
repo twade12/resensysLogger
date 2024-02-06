@@ -6,7 +6,7 @@ sid2=${STR:2:2}
 sid=$sid1-$sid2
 
 echo "CREATE DATABASE IF NOT EXISTS \`Data_$1\`;" >> siteCommands.sql
-echo "INSERT INTO \`shm-admin\`.\`Accounts\` (\`UserName\`,\`SID\`,\`SIDName\`,\`AccountType\`,\`LastLogin\`,\`Enable\`,\`Password\`,\`LastUpdate\`,\`Email1\`,\`Email2\`,\`Email3\`,\`latitude\`,\`longtitude\`) VALUES('$user','$sid','$sid','Administrator',UTC_TIMESTAMP(),1,'Bridge57@#',UTC_TIMESTAMP(),'','','',0,0);" >> siteCommands.sql
+echo "INSERT INTO \`shm-admin\`.\`Accounts\` (\`UserName\`,\`SID\`,\`SIDName\`,\`AccountType\`,\`LastLogin\`,\`Enable\`,\`Password\`,\`LastUpdate\`,\`Email1\`,\`Email2\`,\`Email3\`,\`latitude\`,\`longtitude\`) VALUES('shm-admin','$sid','$sid','Administrator',UTC_TIMESTAMP(),1,'Bridge57@#',UTC_TIMESTAMP(),'','','',0,0);" >> siteCommands.sql
 echo "GRANT SELECT ON \`Data_$1\`.* to \`shm-admin\`@\`%\` WITH GRANT OPTION;" >> siteCommands.sql
 echo "CREATE TABLE IF NOT EXISTS \`sensors_buffer\`.\`Data_$1\` (\`SiteID\` int(11) unsigned DEFAULT NULL,\`DeviceID\` int(11) unsigned DEFAULT NULL,\`SeqNo\` char(3) DEFAULT NULL,\`Time\` timestamp NULL DEFAULT NULL,\`DataFormat\` int(11) unsigned DEFAULT NULL,\`Value\` int(11) DEFAULT NULL,\`Optional\` int(11) DEFAULT NULL,KEY \`time_index\` (\`Time\`) USING HASH) ENGINE=MyISAM DEFAULT CHARSET=latin1;" >> siteCommands.sql
 echo "CREATE TABLE IF NOT EXISTS \`sensors\`.\`Data_$1\` (\`SiteID\` int(11) unsigned DEFAULT NULL,\`DeviceID\` int(11) unsigned DEFAULT NULL,\`SeqNo\` char(3) DEFAULT NULL,\`Time\` timestamp NULL DEFAULT NULL,\`DataFormat\` int(11) unsigned DEFAULT NULL,\`Value\` int(11) DEFAULT NULL,\`Optional\` int(11) DEFAULT NULL,KEY \`time_index\` (\`Time\`) USING HASH) ENGINE=MyISAM DEFAULT CHARSET=latin1;" >> siteCommands.sql
